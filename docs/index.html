@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Speech Demo of VoxTracer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="demo/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="demo/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon solid major fa-cloud"></span>
+					<h1> Speech Demo of VoxTracer</a></h1>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<header class="major">
+						<h2>Section 1. Examples of Watermarked Speeches</h2>
+					</header>
+					<p>In this section, we give 5 groups of audio examples. Each group follows the workflow shown in Figure 3. We use VC to convert source speaker's content to
+					target speaker's voice while hiding source speaker's embeddings. We compare the audio quality between the baseline and our models. Finally, we use VC
+					to generate the source voice using the traced embeddings.
+					</p>
+					<h3>1.AutoVC</h3>
+					<!--<h3>mel-spectrograms</h3>-->
+					<!--<span class="image fit"><img src="demo/images/fig3.png" title="" /></span>-->
+					<div style="overflow: auto">
+						<table border="1">
+							<tr>
+								<td></td> 
+								<td><p align='center'></br>example 1</p></td>						
+								<td><p align='center'></br>example 2</p></td>
+								<td><p align='center'></br>example 3</p></td>									
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Source </br> Speech</td></p> 
+								<td><p align='center'>p225_008</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p225_008.wav'></source></audio></td>
+								<td><p align='center'>p226_003</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p226_003.wav'></source></audio></td>
+								<td><p align='center'>p228_005</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p228_005.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Target </br> Speech</td></p> 
+								<td><p align='center'>p228_007</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p228_007.wav'></source></audio></td>
+								<td><p align='center'>p227_002</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p227_002.wav'></source></audio></td>
+								<td><p align='center'>p229_009</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p229_009.wav'></source></audio></td>		
+							</tr>
+							<tr>
+								<td><p align='center'></br>Voice </br> Conversion </br> (without </br> watermarking)</p></td> 
+								<td><p align='center'>p225_008xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/vc/p225_008xp228.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp227</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/vc/p226_003xp227.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/vc/p228_005xp229.wav'></source></audio></td>												
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>DPAS</p></td> 
+								<td><p align='center'>p225_008xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/dpas/p225_008xp228.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp227</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/dpas/p226_003xp227.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/dpas/p228_005xp229.wav'></source></audio></td>									
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>SS-SNR-HS</p></td> 
+								<td><p align='center'>p225_008xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/ss-snr-hs/p225_008xp228_autovc.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp227</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/ss-snr-hs/p226_003xp227_autovc.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/ss-snr-hs/p228_005xp229_autovc.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>DNN-RSW</p></td> 
+								<td><p align='center'>p225_008xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/dnnw/p225_008xp228.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp227</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/dnnw/p226_003xp227.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/dnnw/p228_005xp229.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br><b>Our </br> VoxTracer</b></p></td> 
+								<td><p align='center'>p225_008xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/voxtracer/p225_008xp228.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp227</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/voxtracer/p226_003xp227.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/autovc/voxtracer/p228_005xp229.wav'></source></audio></td>
+							</tr>
+						</table>
+					</div>
+					</br>
+					<h3>2.SpeechSplit2.0</h3>
+					<!--<h3>mel-spectrograms</h3>-->
+					<!--<span class="image fit"><img src="demo/images/fig3.png" title="" /></span>-->
+					<div style="overflow: auto">
+						<table border="1">
+							<tr>
+								<td></td> 
+								<td><p align='center'></br>example 1</p></td>						
+								<td><p align='center'></br>example 2</p></td>
+								<td><p align='center'></br>example 3</p></td>									
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Source </br> Speech</td></p> 
+								<td><p align='center'>p225_008</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p225_008.wav'></source></audio></td>
+								<td><p align='center'>p226_003</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p226_003.wav'></source></audio></td>
+								<td><p align='center'>p228_005</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p228_005.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Target </br> Speech</td> </p>
+								<td><p align='center'>p226_004</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p226_004.wav'></source></audio></td>
+								<td><p align='center'>p228_007</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p228_007.wav'></source></audio></td>
+								<td><p align='center'>p229_009</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p229_009.wav'></source></audio></td>		
+							</tr>
+							<tr>
+								<td><p align='center'></br>Voice </br> Conversion</br>(without</br> watermarking)</p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/vc/p225_008xp226.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/vc/p226_003xp228.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/vc/p228_005xp229.wav'></source></audio></td>												
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>DPAS</p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/dpas/p225_008xp226.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/dpas/p226_003xp228.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/dpas/p228_005xp229.wav'></source></audio></td>									
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>SS-SNR-HS</p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/ss-snr-hs/p225_008xp226_ss2.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/ss-snr-hs/p226_003xp228_ss2.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/ss-snr-hs/p228_005xp229_ss2.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>DNN-RSW</p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/dnnw/p225_008xp226.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/dnnw/p226_003xp228.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/dnnw/p228_005xp229.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br><b>Our </br> VoxTracer</b></p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/voxtracer/p225_008xp226.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/voxtracer/p226_003xp228.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/speechsplit2/voxtracer/p228_005xp229.wav'></source></audio></td>
+							</tr>
+						</table>
+					</div>
+					</br>
+					<h3>3.YourTTS-VC</h3>
+					<!--<h3>mel-spectrograms</h3>-->
+					<!--<span class="image fit"><img src="demo/images/fig3.png" title="" /></span>-->
+					<div style="overflow: auto">
+						<table border="1">
+							<tr>
+								<td></td> 
+								<td><p align='center'></br>example 1</p></td>						
+								<td><p align='center'></br>example 2</p></td>
+								<td><p align='center'></br>example 3</p></td>									
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Source</br>Speech</p></td> 
+								<td><p align='center'>p225_008</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p225_008.wav'></source></audio></td>
+								<td><p align='center'>p226_003</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p226_003.wav'></source></audio></td>
+								<td><p align='center'>p228_005</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/source/p228_005.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Target </br> Speech</td></p> 
+								<td><p align='center'>p226_007</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p226_004.wav'></source></audio></td>
+								<td><p align='center'>p228_002</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p228_007.wav'></source></audio></td>
+								<td><p align='center'>p229_009</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/target/p229_009.wav'></source></audio></td>		
+							</tr>
+							<tr>
+								<td><p align='center'></br>Voice </br> Conversion</br>(without</br> watermarking)</p></td>  
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/vc/p225_008xp226.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/vc/p226_003xp228.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/vc/p228_005xp229.wav'></source></audio></td>												
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>DPAS</p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/dpas/p225_008xp226.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/dpas/p226_003xp228.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/dpas/p228_005xp229.wav'></source></audio></td>									
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>SS-SNR-HS</p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/ss-snr-hs/p225_008xp226_yt.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/ss-snr-hs/p226_003xp228_yt.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/ss-snr-hs/p228_005xp229_yt.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>DNN-RSW</p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/dnnw/p225_008xp226.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/dnnw/p226_003xp228.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/dnnw/p228_005xp229.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br><b>Our </br> VoxTracer</b></p></td> 
+								<td><p align='center'>p225_008xp226</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/voxtracer/p225_008xp226.wav'></source></audio></td>						
+								<td><p align='center'>p226_003xp228</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/voxtracer/p226_003xp228.wav'></source></audio></td>
+								<td><p align='center'>p228_005xp229</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/watermarked/yourtts/voxtracer/p228_005xp229.wav'></source></audio></td>
+							</tr>
+						</table>
+					
+				</div>
+			</section>
+			
+		<!-- Two -->
+			<section id="two" class="main style1">
+				<div class="container">
+					<header class="major">
+						<h2>Section 2. Examples of Recovered Speeches</h2>
+					</header>
+					<p>waiting.
+					</p>
+					<h3>1.Source Speaker: p225</h3>
+					<!--<h3>mel-spectrograms</h3>-->
+					<!--<span class="image fit"><img src="demo/images/fig3.png" title="" /></span>-->
+					<div style="overflow: auto">
+						<table border="1">
+							<tr>
+								<td></td> 
+								<td><p align='center'></br>example 1</p></td>						
+								<td><p align='center'></br>example 2</p></td>
+								<td><p align='center'></br>example 3</p></td>
+								<td><p align='center'></br>example 4</p></td>
+								<td><p align='center'></br>example 5</p></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Original </br> Speech</td></p> 
+								<td><p align='center'>p225_001</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p225/p225_001.wav'></source></audio></td>
+								<td><p align='center'>p225_002</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p225/p225_002.wav'></source></audio></td>
+								<td><p align='center'>p225_003</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p225/p225_003.wav'></source></audio></td>
+								<td><p align='center'>p225_004</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p225/p225_004.wav'></source></audio></td>
+								<td><p align='center'>p225_005</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p225/p225_005.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Recovered </br> Speech</td></p> 
+								<td><p align='center'>p225_001_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p225/p225_001_to_p225_008xp226_03_recovered.wav'></source></audio></td>
+								<td><p align='center'>p225_002_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p225/p225_002_to_p225_008xp228_10_recovered.wav'></source></audio></td>
+								<td><p align='center'>p225_003_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p225/p225_003_to_p225_008xp228_08_recovered.wav'></source></audio></td>
+								<td><p align='center'>p225_004_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p225/p225_004_to_p225_008xp227_08_recovered.wav'></source></audio></td>
+								<td><p align='center'>p225_005_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p225/p225_005_to_p225_008xp227_00_recovered.wav'></source></audio></td>
+							</tr>
+							
+						</table>
+					</div>
+					</br>
+					<h3>2.Source Speaker: p226</h3>
+					<!--<h3>mel-spectrograms</h3>-->
+					<!--<span class="image fit"><img src="demo/images/fig3.png" title="" /></span>-->
+					<div style="overflow: auto">
+						<table border="1">
+							<tr>
+								<td></td> 
+								<td><p align='center'></br>example 1</p></td>						
+								<td><p align='center'></br>example 2</p></td>
+								<td><p align='center'></br>example 3</p></td>
+								<td><p align='center'></br>example 4</p></td>
+								<td><p align='center'></br>example 5</p></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Original </br> Speech</td></p> 
+								<td><p align='center'>p226_001</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p226/p226_001.wav'></source></audio></td>
+								<td><p align='center'>p226_002</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p226/p226_002.wav'></source></audio></td>
+								<td><p align='center'>p226_003</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p226/p226_003.wav'></source></audio></td>
+								<td><p align='center'>p226_004</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p226/p226_004.wav'></source></audio></td>
+								<td><p align='center'>p226_005</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p226/p226_005.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Recovered </br> Speech</td></p> 
+								<td><p align='center'>p226_001_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p226/p226_001_to_p226_003xp230_05_recovered.wav'></source></audio></td>
+								<td><p align='center'>p226_002_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p226/p226_002_to_p226_003xp231_04_recovered.wav'></source></audio></td>
+								<td><p align='center'>p226_003_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p226/p226_003_to_p226_003xp231_00_recovered.wav'></source></audio></td>
+								<td><p align='center'>p226_004_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p226/p226_004_to_p226_003xp232_07_recovered.wav'></source></audio></td>
+								<td><p align='center'>p226_005_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p226/p226_005_to_p226_003xp227_04_recovered.wav'></source></audio></td>
+							</tr>
+							
+						</table>
+					</div>
+					</br>
+					<h3>3.Source Speaker: p227</h3>
+					<!--<h3>mel-spectrograms</h3>-->
+					<!--<span class="image fit"><img src="demo/images/fig3.png" title="" /></span>-->
+					<div style="overflow: auto">
+						<table border="1">
+							<tr>
+								<td></td> 
+								<td><p align='center'></br>example 1</p></td>						
+								<td><p align='center'></br>example 2</p></td>
+								<td><p align='center'></br>example 3</p></td>
+								<td><p align='center'></br>example 4</p></td>
+								<td><p align='center'></br>example 5</p></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Original </br> Speech</td></p> 
+								<td><p align='center'>p227_001</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p227/p227_001.wav'></source></audio></td>
+								<td><p align='center'>p227_002</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p227/p227_002.wav'></source></audio></td>
+								<td><p align='center'>p227_003</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p227/p227_003.wav'></source></audio></td>
+								<td><p align='center'>p227_004</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p227/p227_004.wav'></source></audio></td>
+								<td><p align='center'>p227_005</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p227/p227_005.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Recovered </br> Speech</td></p> 
+								<td><p align='center'>p227_001_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p227/p227_001_to_p227_008xp230_03_recovered.wav'></source></audio></td>
+								<td><p align='center'>p227_002_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p227/p227_002_to_p227_008xp227_11_recovered.wav'></source></audio></td>
+								<td><p align='center'>p227_003_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p227/p227_003_to_p227_008xp231_03_recovered.wav'></source></audio></td>
+								<td><p align='center'>p227_004_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p227/p227_004_to_p227_008xp225_07_recovered.wav'></source></audio></td>
+								<td><p align='center'>p227_005_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p227/p227_005_to_p227_008xp230_08_recovered.wav'></source></audio></td>
+							</tr>
+							
+						</table>
+					</div>
+					</br>					
+					<h3>4.Source Speaker: p228</h3>
+					<!--<h3>mel-spectrograms</h3>-->
+					<!--<span class="image fit"><img src="demo/images/fig3.png" title="" /></span>-->
+					<div style="overflow: auto">
+						<table border="1">
+							<tr>
+								<td></td> 
+								<td><p align='center'></br>example 1</p></td>						
+								<td><p align='center'></br>example 2</p></td>
+								<td><p align='center'></br>example 3</p></td>
+								<td><p align='center'></br>example 4</p></td>
+								<td><p align='center'></br>example 5</p></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Original </br> Speech</td></p> 
+								<td><p align='center'>p228_001</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p228/p228_001.wav'></source></audio></td>
+								<td><p align='center'>p228_002</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p228/p228_002.wav'></source></audio></td>
+								<td><p align='center'>p228_003</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p228/p228_003.wav'></source></audio></td>
+								<td><p align='center'>p228_004</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p228/p228_004.wav'></source></audio></td>
+								<td><p align='center'>p228_005</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/original/p228/p228_005.wav'></source></audio></td>
+							</tr>
+							<tr>
+								<td><p align='center'></br></br>Recovered </br> Speech</td></p> 
+								<td><p align='center'>p228_001_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p228/p228_001_to_p228_005xp225_00_recovered.wav'></source></audio></td>
+								<td><p align='center'>p228_002_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p228/p228_002_to_p228_005xp231_03_recovered.wav'></source></audio></td>
+								<td><p align='center'>p228_003_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p228/p228_003_to_p228_005xp233_07_recovered.wav'></source></audio></td>
+								<td><p align='center'>p228_004_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p228/p228_004_to_p228_005xp231_00_recovered.wav'></source></audio></td>
+								<td><p align='center'>p228_005_r</p><audio controls="controls" preload="preload"><source src='demo/speech_examples/recovered/p228/p228_005_to_p228_005xp227_05_recovered.wav'></source></audio></td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+			</section>
+		
+
+		<!-- Footer -->
+			<section id="footer">
+				<!--
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				<-->
+			</section>
+
+		<!-- Scripts -->
+			<script src="demo/assets/js/jquery.min.js"></script>
+			<script src="demo/assets/js/jquery.scrolly.min.js"></script>
+			<script src="demo/assets/js/browser.min.js"></script>
+			<script src="demo/assets/js/breakpoints.min.js"></script>
+			<script src="demo/assets/js/util.js"></script>
+			<script src="demo/assets/js/main.js"></script>
+
+	</body>
+</html>
